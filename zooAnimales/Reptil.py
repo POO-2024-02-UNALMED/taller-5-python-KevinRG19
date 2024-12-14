@@ -1,4 +1,4 @@
-from .Animal import Animal
+from .animal import Animal
 
 class Reptil(Animal):
 
@@ -17,6 +17,18 @@ class Reptil(Animal):
     
     def cantidadReptiles(self):
         return len(Reptil._listado)
+    
+    def setColorEscamas(self, color):
+        self._colorEscamas = color
+    
+    def getColorEscamas(self):
+        return self._colorEscamas
+    
+    def setLargoCola(self, largo):
+        self._largoCola = largo
+    
+    def getLargoCola(self):
+        return self._largoCola
     
     @classmethod
     def crearIguana(cls, nombre = '', edad = 0, genero = ''):

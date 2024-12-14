@@ -1,5 +1,5 @@
-from gestion.Zoologico import Zoologico
-from zooAnimales.Animal import Animal
+from gestion.zoologico import Zoologico
+from zooAnimales.animal import Animal
 
 class Zona:
 

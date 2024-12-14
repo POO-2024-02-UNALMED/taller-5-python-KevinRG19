@@ -1,8 +1,9 @@
-from .Mamifero import Mamifero
-from .Ave import Ave
-from .Reptil import Reptil
-from .Pez import Pez
-from .Anfibio import Anfibio
+from .mamifero import Mamifero
+from .ave import Ave
+from .reptil import Reptil
+from .pez import Pez
+from .anfibio import Anfibio
+from gestion.zona import Zona
 
 class Animal:
     _totalAnimales = 0
@@ -15,34 +16,34 @@ class Animal:
         self._zona = []
         Animal._totalAnimales += 1
 
-    def get_nombre(self):
+    def getNombre(self):
         return self._nombre
 
-    def set_nombre(self, nombre):
+    def setNombre(self, nombre):
         self._nombre = nombre
 
-    def get_edad(self):
+    def getEdad(self):
         return self._edad
 
-    def set_edad(self, edad):
+    def setEdad(self, edad):
         self._edad = edad
 
-    def get_habitat(self):
+    def getHabitat(self):
         return self._habitat
 
-    def set_habitat(self, habitat):
+    def setHabitat(self, habitat):
         self._habitat = habitat
 
-    def get_genero(self):
+    def getGenero(self):
         return self._genero
 
-    def set_genero(self, genero):
+    def setGenero(self, genero):
         self._genero = genero
 
-    def get_zona(self):
+    def getZona(self):
         return self._zona
 
-    def set_zona(self, zona):
+    def setZona(self, zona):
         self._zona = zona
 
     @classmethod

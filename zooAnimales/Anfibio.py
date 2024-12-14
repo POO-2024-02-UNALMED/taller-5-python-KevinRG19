@@ -1,4 +1,4 @@
-from .Animal import Animal
+from .animal import Animal
 
 class Anfibio(Animal):
 
@@ -14,6 +14,18 @@ class Anfibio(Animal):
 
     def movimiento(self):
         return "saltar"
+    
+    def getColorPiel(self):
+        return self._colorPiel
+
+    def setColorPiel(self, colorPiel):
+        self._colorPiel = colorPiel
+
+    def isVenenoso(self):
+        return self._venenoso
+
+    def setVenenoso(self, venenoso):
+        self._venenoso = venenoso
     
     def cantidadAnfibios(self):
         return len(Anfibio._listado)

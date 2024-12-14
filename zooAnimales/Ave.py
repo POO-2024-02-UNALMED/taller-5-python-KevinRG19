@@ -1,4 +1,4 @@
-from .Animal import Animal
+from .animal import Animal
 
 class Ave(Animal):
 
@@ -13,6 +13,12 @@ class Ave(Animal):
 
     def movimiento(self):
         return "volar"
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
+
+    def setColorPlumas(self, colorPlumas):
+        self._colorPlumas = colorPlumas
     
     def cantidadAves(self):
         return len(Ave._listado)

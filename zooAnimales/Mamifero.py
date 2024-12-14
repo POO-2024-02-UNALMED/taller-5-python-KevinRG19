@@ -1,4 +1,4 @@
-from .Animal import Animal
+from .animal import Animal
 
 class Mamifero(Animal):
 
@@ -14,6 +14,18 @@ class Mamifero(Animal):
 
     def cantidadMamiferos(self):
         return len(Mamifero._listado)
+    
+    def getPelaje(self):
+        return self._pelaje
+
+    def setPelaje(self, pelaje):
+        self._pelaje = pelaje
+
+    def getPatas(self):
+        return self._patas
+
+    def setPatas(self, patas):
+        self._patas = patas
     
     @classmethod
     def crearCaballo(cls, nombre = '', edad = 0, genero = ''):
