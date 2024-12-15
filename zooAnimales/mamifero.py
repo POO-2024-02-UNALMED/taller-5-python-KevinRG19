@@ -12,7 +12,8 @@ class Mamifero(Animal):
         self._patas = patas
         Mamifero._listado.append(self)
 
-    def cantidadMamiferos(self):
+    @classmethod
+    def cantidadMamiferos(cls):
         return len(Mamifero._listado)
     
     def getPelaje(self):

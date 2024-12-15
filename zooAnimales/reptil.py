@@ -15,7 +15,8 @@ class Reptil(Animal):
     def movimiento(self):
         return "reptar"
     
-    def cantidadReptiles(self):
+    @classmethod
+    def cantidadReptiles(cls):
         return len(Reptil._listado)
     
     def setColorEscamas(self, color):

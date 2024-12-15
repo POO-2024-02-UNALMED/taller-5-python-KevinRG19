@@ -1,9 +1,4 @@
-from .mamifero import Mamifero
-from .ave import Ave
-from .reptil import Reptil
-from .pez import Pez
-from .anfibio import Anfibio
-
+import zooAnimales
 
 class Animal:
     _totalAnimales = 0
@@ -48,7 +43,7 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
-        return (f'Mamiferos : {len(Mamifero._listado)}\nAves : {len(Ave._listado)}\nReptiles : {len(Reptil._listado)}\nPeces : {len(Pez._listado)}\nAnfibios : {len(Anfibio._listado)}')
+        return (f'Mamiferos : {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}\nAves : {zooAnimales.ave.Ave.cantidadAves()}\nReptiles : {zooAnimales.reptil.Reptil.cantidadReptiles()}\nPeces : {zooAnimales.pez.Pez.cantidadPeces()}\nAnfibios : {zooAnimales.anfibio.Anfibio.cantidadAnfibios()}')
     
     
     def __str__(self):

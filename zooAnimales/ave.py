@@ -20,7 +20,8 @@ class Ave(Animal):
     def setColorPlumas(self, colorPlumas):
         self._colorPlumas = colorPlumas
     
-    def cantidadAves(self):
+    @classmethod
+    def cantidadAves(cls):
         return len(Ave._listado)
     
     @classmethod

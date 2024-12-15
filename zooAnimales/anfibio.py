@@ -27,7 +27,8 @@ class Anfibio(Animal):
     def setVenenoso(self, venenoso):
         self._venenoso = venenoso
     
-    def cantidadAnfibios(self):
+    @classmethod
+    def cantidadAnfibios(cls):
         return len(Anfibio._listado)
 
     @classmethod
