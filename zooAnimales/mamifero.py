@@ -16,7 +16,7 @@ class Mamifero(Animal):
     def cantidadMamiferos(cls):
         return len(Mamifero._listado)
     
-    def getPelaje(self):
+    def isPelaje(self):
         return self._pelaje
 
     def setPelaje(self, pelaje):
