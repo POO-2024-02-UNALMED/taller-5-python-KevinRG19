@@ -1,5 +1,3 @@
-
-
 class Zoologico:
     
     def __init__(self, nombre = '', ubicacion = '', zonas = None):
@@ -30,7 +28,7 @@ class Zoologico:
         Zona._zoo = self
     
     def cantidadTotalAnimales(self):
-        from .zona import Zona
+        from gestion.zona import Zona
         cantidad = 0
         for i in range(self._zonas):
             if isinstance(i, Zona):
