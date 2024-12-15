@@ -1,4 +1,4 @@
-from .zona import Zona
+
 
 class Zoologico:
     
@@ -25,16 +25,18 @@ class Zoologico:
     def getZonas(self):
         return self._zonas
     
+    def agregarZonas(self, Zona):
+        self._zonas.append(Zona)
+        Zona._zoo = self
+    
     def cantidadTotalAnimales(self):
+        from .zona import Zona
         cantidad = 0
         for i in range(self._zonas):
             if isinstance(i, Zona):
                 cantidad += len(i._animales)
         return cantidad
 
-    def agregarZonas(self, Zona):
-        self._zonas.append(Zona)
-        Zona._zoo = self
 
 
         

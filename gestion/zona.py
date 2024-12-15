@@ -8,7 +8,6 @@ class Zona:
         self._zoo = zoo
         self._animales = []
 
-    
     def setNombre(self, nombre):
         self._nombre = nombre
 
@@ -33,4 +32,4 @@ class Zona:
 
     def cantidadAnimales(self):
         return len(self._animales)
-    
+
